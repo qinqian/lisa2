@@ -178,7 +178,7 @@ class LISA_Core:
                     query_names.append(label_dict[loc][1])
 
 
-        return np.array(gene_mask), np.array(label_vector).astype(np.bool), dict(
+        return np.array(gene_mask), np.array(label_vector).astype(bool), dict(
             query_symbols = query_names,
             background_symbols = background_names,
         )
