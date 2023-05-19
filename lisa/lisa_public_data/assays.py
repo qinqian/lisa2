@@ -137,7 +137,7 @@ class Accesibility_Assay(LISA_RP_Assay):
 
     def predict(self, gene_mask, label_vector, debug = False):
 
-        with self.log.section('Modeling {} purturbations:'.format(self.technology)):
+        with self.log.section('Modeling {} perturbations:'.format(self.technology)):
 
             try:
                 self.rp_matrix

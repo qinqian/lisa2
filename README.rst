@@ -63,6 +63,12 @@ Install LISA to this virtual env using this command:
 
   (lisa_env) $ pip install lisa2
 
+Install the latest
+
+.. code-block:: bash
+
+  (lisa_env) $ pip install git+https://github.com/qinqian/lisa2
+
 Conda
 ~~~~~
 
