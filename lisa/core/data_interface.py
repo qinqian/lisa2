@@ -152,9 +152,9 @@ class DataInterface:
             exons = genome_tools.RegionSet(exons, self.genome)
             region_exon_map = region_set.map_intersects(exons, distance_function = lambda x,y : x.overlaps(y, min_overlap_proportion=0.4),slop_distance=0) #REGIONS X EXONS
 
-            region_exon_map = region_exon_map.dot(exon_gene_map).astype(np.bool)
+            region_exon_map = region_exon_map.dot(exon_gene_map).astype(bool)
 
-            not_exon_promoter = 1 - region_exon_map.sum(axis = 1).astype(np.bool)
+            not_exon_promoter = 1 - region_exon_map.sum(axis = 1).astype(bool)
 
             basic_rp_map = self._make_basic_rp_map(gene_loc_set, region_set, decay)
 
